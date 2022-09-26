@@ -6,22 +6,22 @@ export default function NavBar1() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white">
+        <nav className="w-full bg-white  z-10 absolute top-0">
             <div className="justify-center px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/">
-                            <img className="lg:hidden block" src={logo} />
+                            <img className="md:hidden block" src={logo} />
                         </Link>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 "
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-red-600"
+                                        className="w-6 h-6 text-[#D00338E5]/90"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -34,7 +34,7 @@ export default function NavBar1() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-red-600"
+                                        className="w-6 h-6 text-[#D00338E5]/90"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"

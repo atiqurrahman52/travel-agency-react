@@ -28,19 +28,15 @@ module.exports = {
         quentin: ["Quentin", "sans-serif"],
         nunito:["Nunito", "sans-serif"],
         squarepeg:["Square Peg", "cursive"],
+       
       },
       colors: {
         'primary': '#393E50',
         'secondary': '#5C5C5C',
+        'accent': '#D41B4B',
         
       },
-    //   backgroundImage: {
-    //     'dotted-bg': "url('./assets/images/about_us/dotted.png')",
-    //     'blog-bg': "url('./assets/images/blog/blog_bg.png')",
-    //     'single-blog': "url('./assets/images/single_blog/single_bg.png')",
-    //     'single-blog-mob': "url('./assets/images/single_blog/single_bg_mob.png')",
-    // },
-
+   
     },
   },
   plugins: [],

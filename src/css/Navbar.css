@@ -86,14 +86,7 @@
     background: transparent;
     transition: width 0.7s ease, background-color 0.5s ease;
 
-    /* content: ''; */
-    /* position: absolute; */
-    /* bottom: 2px; */
-    /* left: 50%; */
-    /* left: 686px; */
-    /* transform: translateX(-50%); */
-    /* border-bottom: 2px solid #D00338E5; */
-    /* width: 20px; */
+   
   }
   
   .nav-item:hover:after {
