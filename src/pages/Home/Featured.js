@@ -2,6 +2,7 @@ import React from 'react';
 import usa from '../../assets/images/featured/hollywood hills.png';
 import norway from '../../assets/images/featured/nordic hall.png';
 import montenegro from '../../assets/images/featured/cozy house.png';
+import { MapPin } from 'phosphor-react';
 
 const Featured = () => {
     const featuredItems = [
@@ -51,15 +52,16 @@ const Featured = () => {
                       />
                 </div>
                 <div className="absolute top-[33px] left-[32px] space-y-[15px]">
-                      <p className="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                      <p className="font-nunito font-[800] text-[16px] text-white">
                         {item.trips}
                       </p>
-                      <p className="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                      <p className="font-nunito font-[800] text-[16px] text-white">
                          {item.price}
                       </p>
                     </div>
                     <div className="absolute bottom-7 left-[32px] flex items-center gap-2">
-                      <i className="ph-map-pin text-[#FFFFFF]"></i>
+                   
+                      <MapPin className='text-white' size={18} />
                       <p className="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
                        {item.country}
                       </p>

@@ -30,6 +30,11 @@ module.exports = {
         squarepeg:["Square Peg", "cursive"],
        
       },
+      backgroundImage: {
+        'experience': "url('./src/assets/images/event_banner/desert2.png')",
+        
+        
+    },
       colors: {
         'primary': '#393E50',
         'secondary': '#5C5C5C',
