@@ -41,8 +41,11 @@ const Featured = () => {
         </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 '>
             {
-                featuredItems.map(item => (
+                
+                featuredItems.map(item =>  (
+                 
                 <div className="relative group overflow-hidden rounded-[20px]"> 
+               {/* key={item.id}  */}
                 <div className="">
                       <img
                         className="w-full group-hover:scale-125 transition-all duration-[2000ms]"
@@ -62,7 +65,7 @@ const Featured = () => {
                     <div className="absolute bottom-7 left-[32px] flex items-center gap-2">
                    
                       <MapPin className='text-white' size={18} />
-                      <p className="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
+                      <p className="font-nunito font-[600] text-[14px] text-white">
                        {item.country}
                       </p>
                     </div>
