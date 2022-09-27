@@ -1,4 +1,5 @@
 import React from 'react';
+import Asia from './Asia';
 import EventBanner from './EventBanner';
 import Featured from './Featured';
 import Hero from './Hero';
@@ -11,6 +12,7 @@ const Home = () => {
             <Featured />
             <EventBanner />
             <Inspiration />
+            <Asia />
         </div>
     );
 };

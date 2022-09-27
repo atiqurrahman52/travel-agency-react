@@ -9,6 +9,7 @@ import miyajima from "../../assets/images/inspiration/miyajima.png";
 import Beijing from "../../assets/images/inspiration/beijing.png";
 
 const Inspiration = () => {
+  
   const images = [
     {
       i: 0,
@@ -68,16 +69,16 @@ const Inspiration = () => {
                 }`}
               >
      
-                {/* <div class="relative group rounded-[16px] overflow-hidden cursor-pointer"> */}
+              
                   <img
                     src={image.img}
-                    class="group-hover:scale-110 transition duration-1000 w-full h-full"
+                    class="group-hover:scale-110 transition duration-1000 w-full h-full object-cover bg-[#0000004D]/20"
                     alt=""
                   />
                   <p class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-white font-nunito font-extrabold text-[24px] leading-[30px]">
                    {image.name}
                   </p>
-                {/* </div> */}
+             
               </div>
             )
       

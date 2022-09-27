@@ -5,6 +5,7 @@ import montenegro from '../../assets/images/featured/cozy house.png';
 import { MapPin } from 'phosphor-react';
 
 const Featured = () => {
+  
     const featuredItems = [
         {
           id: 0,
