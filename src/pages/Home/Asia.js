@@ -113,7 +113,7 @@ const Asia = () => {
 
        {/* <div> */}
     
-        <Slider {...settings}   >
+        <Slider {...settings}  >
 
           {
             asiaSlider.map(asia => 

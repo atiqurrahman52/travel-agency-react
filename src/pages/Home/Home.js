@@ -1,5 +1,6 @@
 import React from 'react';
 import Asia from './Asia';
+import Combo from './Combo';
 import EventBanner from './EventBanner';
 import Featured from './Featured';
 import Hero from './Hero';
@@ -13,6 +14,7 @@ const Home = () => {
             <EventBanner />
             <Inspiration />
             <Asia />
+            <Combo />
         </div>
     );
 };
