@@ -66,7 +66,7 @@ const asiaSlider = [
 const Africa = () => {
     const settings = {
       infinite: true,
-      speed: 300,
+      speed: 2000,
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,

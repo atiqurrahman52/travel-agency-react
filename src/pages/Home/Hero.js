@@ -2,7 +2,7 @@ import React from 'react';
 import hero from '../../assets/images/header/Hero Section.png';
 import CountUp from 'react-countup';
 import country from '../../assets/images/countdown/country.svg';
-import travel from '../../assets/images/countdown/experience.svg';
+// import travel from '../../assets/images/countdown/experience.svg';
 import price from '../../assets/images/countdown/price.svg';
 import user from '../../assets/images/countdown/member.svg'
 const Hero = () => {
@@ -74,7 +74,7 @@ const Hero = () => {
                 <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={price} />
                 <div className="text-center md:text-left space-y-2">
                  
-                  {/* <CountUp className='text-accent font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]' end={100} /> */}
+                  
                   <span
                     className="text-accent font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
                     >Best Price</span>

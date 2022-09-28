@@ -1,10 +1,27 @@
 import React from 'react';
 
+
+import Partners from '../Home/Partners';
+import AboutUs from './AboutUs';
+import Package from './Package';
+import Service from './Service';
+
 const About = () => {
     return (
-        <div>
-            <h3 className='text-2xl text-red-500 text-center'>About Page</h3>
+        <div className='pt-28 mt-1 lg:mt-10'>
+ 
+            <AboutUs />
+            <Service />
+            <Partners />
+            <Package />
         </div>
+
+       
+
+          
+
+
+        
     );
 };
 

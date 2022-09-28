@@ -8,13 +8,15 @@ import isuzu from '../../assets/images/partners/isuzu.png';
 import jordan from '../../assets/images/partners/jordan.png';
 import mahindra from '../../assets/images/partners/mahindra.png';
 import makemytrip from '../../assets/images/partners/makemytrip.png';
-import advisor from '../../assets/images/partners/trip advisor.png';
+import tripadvisor from '../../assets/images/partners/tripadvisor.png';
 import tvs from '../../assets/images/partners/tvs.png';
 import uber from '../../assets/images/partners/uber.png';
 import viator from '../../assets/images/partners/viator.png';
-import sweden from '../../assets/images/partners/visit sweden.png';
+import visitsweden from '../../assets/images/partners/visitsweden.png';
 import wildcraft from '../../assets/images/partners/wildcraft.png';
 import zoom from '../../assets/images/partners/zoom car.png';
+// import wildcraft from '../../assets/images/partners/wildcraft.png';
+
 
 import Slider from 'react-slick';
 
@@ -57,52 +59,42 @@ const partners =[
     },
     {
         id:9,
-        logo:uber,
+        logo:tripadvisor,
     },
     {
         id:10,
-        logo:wildcraft,
-    },
-    {
-        id:11,
-        logo:sweden,
-    },
-    {
-        id:12,
-        logo:zoom,
-    },
-    {
-        id:13,
-        logo:viator,
-    },
-    {
-        id:14,
-        logo:isuzu,
-    },
-    {
-        id:15,
         logo:tvs,
     },
     {
+        id:11,
+        logo:uber,
+    },
+    {
+        id:12,
+        logo:viator,
+    },
+    {
+        id:13,
+        logo:visitsweden,
+    },
+    {
+        id:14,
+        logo:wildcraft,
+    },
+    {
+        id:15,
+        logo:zoom,
+    },
+    {
         id:16,
-        logo:advisor,
+        logo:tripadvisor,
     },
     {
         id:17,
         logo:airbnb,
     },
-    {
-        id:18,
-        logo:isuzu,
-    },
-    {
-        id:19,
-        logo:uber,
-    },
-    {
-        id:20,
-        logo:jordan,
-    },
+    
+   
 ]
 
 const Partners = () => {
@@ -115,7 +107,7 @@ const Partners = () => {
         arrows: false,
         rows: 2,
         speed: 8000,
-        autoplaySpeed:0,
+        autoplaySpeed:150,
         pauseOnHover: true,
         cssEase: "linear",
         responsive: [
@@ -153,11 +145,13 @@ const Partners = () => {
           {
             partners.map(partner =>(
                 <div key={partner.id}>
-                     <img
+                  <div>
+                  <img
                 className="grayscale-[100%] hover:grayscale-[0%] lg:w-[100px] w-[70px] lg:h-[50px] h-[20px] object-contain mx-auto my-2"
                 src={partner.logo}
                 alt=""
               />
+                  </div>
              </div>
             ))
           }
