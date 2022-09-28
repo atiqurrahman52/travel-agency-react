@@ -74,12 +74,12 @@ const Combo = () => {
                 <div className='grid grid-cols-12 gap-4'>
                     <div className='col-span-12 lg:col-span-4'>
                     <h3
-              class="text-primary text-[24px] lg:text-[48px]  font-nunito font-extrabold lg:leading-[56px] leading-[40px] lg:text-left text-center mb-[20px]"
+              className="text-primary text-[24px] lg:text-[48px]  font-nunito font-extrabold lg:leading-[56px] leading-[40px] lg:text-left text-center mb-[20px]"
             >
               Find the Perfect Combo 
             </h3>
             <p
-              class="text-[#747474] text-[16px] font-nunito font-[600] leading-[20px] lg:text-left text-center"
+              className="text-[#747474] text-[16px] font-nunito font-[600] leading-[20px] lg:text-left text-center"
             >
               Plan and Find your perfect package for next tour Plan and Find
               your perfect package for next tour Plan and Find your perfect

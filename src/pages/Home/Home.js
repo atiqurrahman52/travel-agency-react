@@ -1,4 +1,5 @@
 import React from 'react';
+import Africa from './Africa';
 import Asia from './Asia';
 import Combo from './Combo';
 import Europe from './Europe';
@@ -7,6 +8,7 @@ import Featured from './Featured';
 import Gift from './Gift';
 import Hero from './Hero';
 import Inspiration from './Inspiration';
+import Partners from './Partners';
 
 const Home = () => {
     return (
@@ -19,6 +21,8 @@ const Home = () => {
             <Combo />
             <Europe />
             <Gift />
+            <Africa />
+            <Partners />
         </div>
     );
 };

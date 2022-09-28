@@ -30,9 +30,9 @@ const Gift = () => {
                 className="w-full"
                 src={gift}
                 alt=""
-                srcset=""
+                srcSet=""
               />
-              <div className="mt-9 mb-20 flex justify-center items-center">
+              <div className="mt-9 lg:mt-0 flex justify-center items-center">
                 <button
                   className="lg:hidden block font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
                 >

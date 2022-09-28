@@ -36,7 +36,7 @@ const Featured = () => {
         <div className='mb-[60px] lg:mb-[104px]'>
         <div className='container'>
         <h1
-          class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800]"
+          className="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800]"
         >
           Featured Trips for You
         </h1>
@@ -45,14 +45,14 @@ const Featured = () => {
                 
                 featuredItems.map(item =>  (
                  
-                <div className="relative group overflow-hidden rounded-[20px]"> 
-               {/* key={item.id}  */}
+                <div key={item.id} className="relative group overflow-hidden rounded-[20px]"> 
+             
                 <div className="">
                       <img
                         className="w-full group-hover:scale-125 transition-all duration-[2000ms]"
                         src={item.image}
                         alt=""
-                        srcset=""
+                        srcSet=""
                       />
                 </div>
                 <div className="absolute top-[33px] left-[32px] space-y-[15px]">
@@ -93,7 +93,7 @@ export default Featured;
                         className="w-full group-hover:scale-125 transition-all duration-[2000ms]"
                         src={item.img}
                         alt=""
-                        srcset=""
+                        srcSet=""
                       />
                     </div>
                     <div className="absolute top-[33px] left-[32px] space-y-[15px]">

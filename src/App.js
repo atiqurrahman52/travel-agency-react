@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Gallery from './pages/Gallery/Gallery';
 import Destination from './pages/Destination/Destination';
 import About from './pages/About/About';
+import Footer from './shared/Footer';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path="gallery" element={<Gallery/>} />
-        <Route path='destination' element={<Destination/>} />
-        <Route path='about' element={<About/>}  />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path='/destination' element={<Destination/>} />
+        <Route path='/about' element={<About/>}  />
       </Routes>
+      <Footer />
     </>
   );
 }

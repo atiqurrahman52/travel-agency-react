@@ -50,7 +50,7 @@ const Inspiration = () => {
   return (
     <div className="mb-[60px] lg:mb-[104px]">
        <h3
-        class="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
+        className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
       >
         Inspiration
       </h3>
@@ -72,10 +72,10 @@ const Inspiration = () => {
               
                   <img
                     src={image.img}
-                    class="group-hover:scale-110 transition duration-1000 w-full h-full object-cover bg-[#0000004D]/20"
+                    className="group-hover:scale-110 transition duration-1000 w-full h-full object-cover bg-[#0000004D]/20"
                     alt=""
                   />
-                  <p class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-white font-nunito font-extrabold text-[24px] leading-[30px]">
+                  <p className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-white font-nunito font-extrabold text-[24px] leading-[30px]">
                    {image.name}
                   </p>
              

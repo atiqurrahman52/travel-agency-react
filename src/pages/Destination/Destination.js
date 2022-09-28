@@ -1,9 +1,15 @@
 import React from 'react';
+import EventBanner from '../Home/EventBanner';
+import Header from './Header';
+import Location from './Location';
 
 const Destination = () => {
     return (
-        <div>
-             <h3 className='text-2xl text-red-500 text-center'>Destination Page</h3>
+        <div className='pt-28'>
+        <Header />
+        <Location />
+        <EventBanner />
+             
         </div>
     );
 };
