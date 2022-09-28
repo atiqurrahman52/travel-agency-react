@@ -1,3 +1,8 @@
 .destination-bg{
     background-image: url("../assets/images/destination/destination.png");
 }
+
+.filter-active{
+    background: #f1b4c4;
+    border: 1px solid rgba(208, 3, 56, 0.4);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import EventBanner from '../Home/EventBanner';
+import AllDestination from './AllDestination';
 import Header from './Header';
 import Location from './Location';
 
@@ -9,6 +10,7 @@ const Destination = () => {
         <Header />
         <Location />
         <EventBanner />
+        <AllDestination />
              
         </div>
     );

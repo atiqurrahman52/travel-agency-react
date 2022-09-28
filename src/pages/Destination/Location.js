@@ -6,6 +6,7 @@ import edinburgh from '../../assets/images/destination/edinburgh.png';
 import kilimanjaro from '../../assets/images/destination/kilimanjaro.png';
 import fuji from '../../assets/images/destination/fuji.png';
 import { CaretLeft, CaretRight } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 
 const locations =[
     { 
@@ -64,7 +65,7 @@ const Location = () => {
          <div className='mt-10 lg:-mt-20 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-2 gap-5 '>
             {
                 locations.map(({ id, country,details,days,price, img }) =>(
-                    <div className=''>
+                    <div key={id} className=''>
                          <div
         className="relative group overflow-hidden rounded-[20px] itemBox"
       
@@ -125,53 +126,54 @@ const Location = () => {
         {/* Pagination started  */}
         
         <div class="flex justify-center mt-[40px] lg:mt-[80px] mb-[80px] lg:mb-[118px]">
-              <a
+              <Link
                 class="flex w-10 h-10 mx-2 bg-[#F1B4C433] justify-center items-center rounded-lg border bg-white text-black"
-                href="#"
+                to="#"
                 title="Previous Page"
               >
                 <CaretLeft size={22} />
                
-              </a>
-              <a
+              </Link>
+              <Link
                 class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border border-gray-200 bg-[#F1B4C4] font-bold text-[16px] leading-[20px] text-[#D00338E5]"
-                href="#"
+                to="#"
                 title="Page 1"
               >
                 1
-              </a>
-              <a
+              </Link>
+              <Link
                 class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border text-[#D00338E5] bg-white font-bold"
-                href="#"
+                to="#"
                 title="Page 2"
               >
                 2
-              </a>
+              </Link>
 
-              <a
+              <Link
                 class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border bg-white font-bold text-[#D00338E5]"
-                href="#"
+                to="#"
                 title="Page 3"
               >
                 3
-              </a>
-              <a
+              </Link>
+              <Link
                 class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border bg-white font-bold text-[#D00338E5]"
-                href="#"
+                to="#"
                 title="Page 4"
               >
                 4
-              </a>
+              </Link>
 
-              <a
+              <Link
                 class="flex w-10 h-10 ml-1 justify-center items-center rounded-lg border bg-[#D00338E5] text-white"
-                href="#"
+                to="#"
                 title="Next Page"
               >
                 <CaretRight size={22} />
                 
-              </a>
+              </Link>
             </div>
+             {/* Pagination end */}
        </div>
     );
 };
