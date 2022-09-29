@@ -2,7 +2,6 @@ import React from 'react';
 import hero from '../../assets/images/header/Hero Section.png';
 import CountUp from 'react-countup';
 import country from '../../assets/images/countdown/country.svg';
-// import travel from '../../assets/images/countdown/experience.svg';
 import price from '../../assets/images/countdown/price.svg';
 import user from '../../assets/images/countdown/member.svg'
 const Hero = () => {
@@ -108,7 +107,7 @@ const Hero = () => {
               </div>
             </div>
                 
-                {/* </div> */}
+               
 
             </div>
         </div>
