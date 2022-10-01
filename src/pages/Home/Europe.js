@@ -117,8 +117,8 @@ const Europe = () => {
           {
             asiaSlider.map(asia => 
                 <div key={asia.id} className="relative gap-x-4">
-                    <div className="w-full">
-                    <img  src={asia.img} />
+                    <div className="mx-2">
+                    <img  src={asia.img} className="w-full" alt="" />
                     </div>
                 <div className="flex items-center gap-2 absolute bottom-24 left-5 text-white">
                 <MapPin size={16} />

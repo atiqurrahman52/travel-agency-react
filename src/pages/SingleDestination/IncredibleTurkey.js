@@ -47,7 +47,7 @@ const incredibleTurkies =[
 
 const IncredibleTurkey = () => {
     return (
-        <div className=''>
+        <div>
             <div class="mb-10">
                 <h3
                   class="text-[#393E50] font-nunito font-extrabold lg:text-[40px] text-[20px] lg:leading-[48px] leading-[28px] mb-4"
@@ -82,7 +82,7 @@ const IncredibleTurkey = () => {
             
                  {
                     incredibleTurkies.map(item =>(
-                        <div class="lg:col-span-3 col-span-6">
+                        <div key={item.id} class="lg:col-span-3 col-span-6">
                              <div class="flex gap-1.5 p-1 flex-col md:flex-row items-center md:items-start justify-center md:justify-start"
                   >
                    
@@ -106,8 +106,11 @@ const IncredibleTurkey = () => {
            
               </div>
               
+             
+              <hr />
             
               </div>
+              
       
     );
 };

@@ -35,7 +35,7 @@ const combos =[
 const Combo = () => {
     const settings = {
         slidesToScroll: 1,
-        autoplaySpeed: 2000,
+        speed: 2000,
         autoplay: true,
         infinite: true,
         arrows: false,
@@ -92,7 +92,7 @@ const Combo = () => {
                         {
                              combos.map(combo => (
                                 <div key={combo.id} className="max-h-[408px] gap-2">
-                             <div>
+                             <div className='mx-2'>
                              <img
                                className="h-[408px] w-full"
                                src={combo.img}

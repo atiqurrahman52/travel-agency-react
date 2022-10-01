@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
   }
+
+  .activeLink {
+    color: red;
+    font-family: bold;
+  }
   
   body {
     /* background-color: #b5fac7; */

@@ -1,25 +1,37 @@
-import React from 'react';
-import DestinationHeader from './DestinationHeader';
-import Form from './Form';
-import IncredibleTurkey from './IncredibleTurkey';
+import React from "react";
+import Featured from "../Home/Featured";
+import Accordion from "./Accordion/Accordion";
+
+import AccordionTurkey from "./AccordionTurkey";
+import DestinationGallery from "./DestinationGallery";
+import DestinationHeader from "./DestinationHeader";
+import Form from "./Form";
+import IncredibleTurkey from "./IncredibleTurkey";
+import ReladedDestination from "./ReladedDestination";
+import Tags from "./Tags";
 
 const SingleDestination = () => {
-    return (
-        <div className='pt-28 '>
-            <DestinationHeader />
-            <div className='grid grid-cols-12 gap-4 container'>
-                <div className='col-span-12 lg:col-span-8'>
-                    <IncredibleTurkey />
-                </div>
+  return (
+    <div className="pt-28 ">
+      <DestinationHeader />
+      <div className="grid grid-cols-12 gap-4 container">
+        <div className="col-span-12 lg:col-span-8">
+          <IncredibleTurkey />
+          <AccordionTurkey />
+          {/* <Accordion /> */}
 
-                <div className='col-span-12 lg:col-span-4'>
-                    <Form />
-                    
-                </div>
-
-            </div>
+          <DestinationGallery />
         </div>
-    );
+
+        <div className="col-span-12 lg:col-span-4">
+          <Form />
+          <ReladedDestination />
+          <Tags />
+        </div>
+      </div>
+      <Featured />
+    </div>
+  );
 };
 
 export default SingleDestination;
