@@ -7,6 +7,7 @@ import halti from "../../assets/images/destination/halti.png";
 import nardic from "../../assets/images/destination/nordic.png";
 import { Link } from "react-router-dom";
 import { CaretLeft, CaretRight } from "phosphor-react";
+import Pagination from "./Pagination";
 
 const menu = [
   {
@@ -210,6 +211,8 @@ const Destination = () => {
           </Link>
         </div>
         {/* Pagination end */}
+
+        <Pagination />
       </div>
     </div>
   );

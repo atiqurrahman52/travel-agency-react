@@ -8,6 +8,7 @@ import SingleDestination from "./pages/SingleDestination/SingleDestination";
 import Layout from "./common/Layout";
 import NavBar from "./shared/Navbar";
 import Footer from "./shared/Footer";
+import Main from "./pages/Pagination/Main";
 
 function App() {
   return (

@@ -29,7 +29,7 @@ const Dubai = () => {
     <div className="pt-">
      
         {galleries.map((items) => (
-          <div className="border rounded-lg p-5 col-span-1">
+          <div  key={items.id} className="border rounded-lg p-5 col-span-1">
             <div class="flex items-center gap-2 mb-[24px]">
               <span class="w-[10px] h-[10px] rounded-full bg-[#F30D60]"></span>
               <p class="font-nunito font-extrabold lg:text-[16px] text-[14px] text-[#393E50] leading-[20px]">
@@ -43,7 +43,7 @@ const Dubai = () => {
 
             <Slider {...settings}>
               {items.img.map((item) => (
-                <div class="mr-2">
+                <div  class="mr-2">
                   <img class="w-full h-full" src={item} alt="" />
                 </div>
               ))}

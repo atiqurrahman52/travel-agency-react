@@ -7,6 +7,7 @@ import Dubai from './Dubai';
 import Scotland from './Scotland';
 import Tanzania from './Tanzania';
 import LoadMore from './LoadMore';
+
 const Gallery = () => {
     return (
         <div className='container'>
@@ -21,6 +22,8 @@ const Gallery = () => {
             
             </div>
             <LoadMore />
+
+       
            
         </div>
     );
