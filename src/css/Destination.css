@@ -9,3 +9,27 @@
 .single-destination{
     background-image: url("../assets//images/single-destination/single-destination.svg");
 }
+
+/* all destination started  */
+
+.country .itemBox.hide {
+    display: none;
+  }
+  
+  section ul li {
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(208, 3, 56, 0);
+    /* border: red; */
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+  
+  section ul li.active {
+    background: #f1b4c4;
+    border: 1px solid rgba(208, 3, 56, 0.4);
+  }
+  
+  /* all destination ended */

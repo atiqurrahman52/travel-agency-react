@@ -26,7 +26,7 @@ const Paris = () => {
     autoplay: true,
   };
   return (
-    <div className="pt-">
+    <div className="">
      
         {galleries.map((items) => (
           <div className="border rounded-lg p-5 col-span-1">

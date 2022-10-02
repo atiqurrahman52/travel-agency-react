@@ -5,7 +5,7 @@ import React from "react";
 const Gallery = () => {
 
   return (
-    <div className="pt-28">
+    <div className="pt-16 lg:pt-28">
      
         <div class="flex flex-col md:flex-row items-center justify-between">
           <h3 class="lg:text-left text-center text-[#393E50]  font-extrabold md:text-[40px] text-[24px] leading-[48px]">
