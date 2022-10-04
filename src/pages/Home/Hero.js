@@ -6,7 +6,7 @@ import price from '../../assets/images/countdown/price.svg';
 import user from '../../assets/images/countdown/member.svg'
 const Hero = () => {
     return (
-      <div className='mt-[40px] md:mt-[50px] curb mb-10 p-1 lg:p-14'>
+      <div className='curb mb-10 p-1 lg:p-14'>
           <div className='container'>
            
             <div className='grid grid-cols-12'>

@@ -1,6 +1,5 @@
 import React from "react";
 import Featured from "../Home/Featured";
-import Accordion from "./Accordion/Accordion";
 
 import AccordionTurkey from "./AccordionTurkey";
 import DestinationGallery from "./DestinationGallery";
@@ -12,13 +11,12 @@ import Tags from "./Tags";
 
 const SingleDestination = () => {
   return (
-    <div className="pt-28 ">
+    <div className="pt-0">
       <DestinationHeader />
       <div className="grid grid-cols-12 gap-4 container">
         <div className="col-span-12 lg:col-span-8">
           <IncredibleTurkey />
           <AccordionTurkey />
-          {/* <Accordion /> */}
 
           <DestinationGallery />
         </div>

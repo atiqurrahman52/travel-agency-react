@@ -1,18 +1,42 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/images/header/Logo.svg";
 
 export default function NavBar() {
-  const [navbar, setNavbar] = useState(false);
+  const location = useLocation();
 
+  const [navbar, setNavbar] = useState(false);
+  const [colorChange, setColorChange] = useState(false);
+
+  const destinationPath = location.pathname === "/destination";
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+
+  useEffect(() => {
+    setColorChange(
+      typeof window !== "undefined" && window.scrollY >= 80 ? true : false
+    );
+    window.addEventListener("scroll", changeNavbarColor);
+  }, [colorChange, destinationPath]);
 
   return (
-    <nav className="w-full bg-white sticky top-0 z-50 ">
+    <nav
+      className={`w-full shadow-lg md:shadow-none
+      ${colorChange ? "bg-white !shadow-lg" : "bg-white md:bg-transparent"} 
+      ${!colorChange && destinationPath ? "md:text-white" : "text-secondary "} 
+      md:pb-5 md:pt-6 fixed top-0 z-50 transition-all duration-500 `}
+    >
       <div className="justify-center px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
-              <img className="md:hidden block" src={logo} alt="" />
+              <img className="md:hidden w-[84px]" src={logo} alt="" />
             </Link>
             <div className="md:hidden">
               <button className="p-2 " onClick={() => setNavbar(!navbar)}>
@@ -31,17 +55,39 @@ export default function NavBar() {
                   </svg>
                 ) : (
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-[#D00338E5]/90"
+                    className="text-[#D00338E5]/90"
+                    width="25"
+                    height="26"
+                    viewBox="0 0 25 26"
                     fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
+                    <rect
+                      x="2.82812"
+                      y="5.68213"
+                      width="10.0859"
+                      height="2.8817"
+                      rx="1.44085"
+                      fill="#D00338"
+                      fill-opacity="0.9"
+                    />
+                    <rect
+                      x="2.82812"
+                      y="11.4456"
+                      width="20.1719"
+                      height="2.8817"
+                      rx="1.44085"
+                      fill="#D00338"
+                      fill-opacity="0.9"
+                    />
+                    <rect
+                      x="2.82812"
+                      y="17.209"
+                      width="12.9676"
+                      height="2.8817"
+                      rx="1.44085"
+                      fill="#D00338"
+                      fill-opacity="0.9"
                     />
                   </svg>
                 )}
@@ -51,27 +97,27 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center pb-3 mt-3 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="items-center justify-center space-y-6 md:flex md:space-x-10 md:space-y-0">
-              <li className="text-secondary uppercase font-nunito font-semibold text-base">
-                <NavLink  to="/">Home</NavLink>
+              <li className="uppercase font-nunito font-semibold text-sm md:text-base">
+                <NavLink to="/">Home</NavLink>
               </li>
-              <li className="text-secondary uppercase font-nunito font-semibold text-base">
+              <li className="uppercase font-nunito font-semibold text-sm md:text-base">
                 <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li className="hidden lg:block">
-                <NavLink  to="/">
+                <NavLink to="/">
                   <img src={logo} alt="" />
                 </NavLink>
               </li>
-              <li className="text-secondary uppercase font-nunito font-semibold text-base">
+              <li className="uppercase font-nunito font-semibold text-sm md:text-base">
                 <NavLink to="/destination">Destination</NavLink>
               </li>
-              <li className="text-secondary uppercase font-nunito font-semibold text-base">
-                <NavLink  to="/about">About</NavLink>
+              <li className="uppercase font-nunito font-semibold text-sm md:text-base">
+                <NavLink to="/about">About</NavLink>
               </li>
             </ul>
           </div>

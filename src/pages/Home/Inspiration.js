@@ -1,56 +1,14 @@
 import { Image } from "phosphor-react";
 import React from "react";
-import ladhak from "../../assets/images/inspiration/ladhak.png";
-import dubai from "../../assets/images/inspiration/dubai.png";
-import sydney from "../../assets/images/inspiration/sydney.png";
-import edinburgh from "../../assets/images/inspiration/edinburgh.png";
-import kilimanjaro from "../../assets/images/inspiration/kilimanjaro.png";
-import miyajima from "../../assets/images/inspiration/miyajima.png";
-import Beijing from "../../assets/images/inspiration/beijing.png";
+import { images } from "../../data/home/inspirationData";
 
 const Inspiration = () => {
-  
-  const images = [
-    {
-      i: 0,
-      img: ladhak,
-      name: "Ladhak",
-    },
-    {
-      i: 1,
-      img: dubai,
-      name: "Dubai",
-    },
-    {
-      i: 2,
-      img: sydney,
-      name: "Sydney",
-    },
-    {
-      i: 3,
-      img: edinburgh,
-      name: "Edinburgh",
-    },
-    {
-      i: 4,
-      img: kilimanjaro,
-      name: "Kilimanjaro",
-    },
-    {
-      i: 5,
-      img: miyajima,
-      name: "Miyajima",
-    },
-    {
-      i: 6,
-      img: Beijing,
-      name: "Beijing",
-    },
-  ];
+
+
   return (
-    <div className="mb-[60px] lg:mb-[104px]">
+    <div className="mb-[60px] lg:mb-[104px] py-2 md:py-12 bg-none md:bg-[#FBF9FA]">
        <h3
-        className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
+        className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[28px] md:mb-[48px]"
       >
         Inspiration
       </h3>

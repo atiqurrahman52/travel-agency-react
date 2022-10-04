@@ -1,22 +1,45 @@
-.pagination{
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    cursor: pointer;
-}
-.pagination  a{
-    padding: 10px;
-    border: 1px solid #47a7de;
-    color: #47a7de;
+.pagination {
+  display: flex;
+  /* justify-content: flex-start; */
+  list-style: none;
+  cursor: pointer;
+  justify-content: center;
+  margin: 60px 0px 40px 0px;
+  gap: 16px;
 }
 
-.pagination__link{
-    font-weight: bold;
+.pagination a {
+  border: 1px solid #F1B4C4;
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  color: #d00338e5;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.pagination__link--active a{
-    color: #fff;
-    background-color: #47a7de;
+
+.pagination__link {
+  font-weight: bold;
+  background-color: #D51C4C;
+  color: white !important;
+  /* margin: 30px; */
 }
-.pagination__link--disable a{
-    
+.pagination__link--active a {
+  /* color: #D51C4C; */
+  background-color: #F1B4C4;
+  border-radius: 8px;
+  border: 1px solid #d0033a00;
+}
+.pagination__link--disable a {
+  /* color: rgb(198, 197, 202); */
+  /* border: 1px solid rgb(198, 197, 202); */
+  /* background: rgba(116, 116, 116, 0.4); */
+  background-color: #f1b4c433;
+  border-radius: 6px;
+  /* color: #DB8F39; */
+  color: #393e5066 !important;
+  border: none !important;
 }

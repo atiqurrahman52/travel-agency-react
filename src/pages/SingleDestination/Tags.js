@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 const Tags = () => {
     return (
        <div className='mb-9'>
-         <div class="md:block hidden">
+         <div className="md:block hidden">
                 <h3
-                  class="text-[#393E50] text-[24px] font-nunito font-extrabold leading-[30px] mb-[48px]"
+                  className="text-[#393E50] text-[24px] font-nunito font-extrabold leading-[30px] mb-[48px]"
                 >
                   Tags
                 </h3>
-                <div class="">
-                  <div class="flex flex-wrap gap-4">
+                <div className="">
+                  <div className="flex flex-wrap gap-4">
     <Link to='#' className='text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]'>Turkey</Link>
     <Link to='#' className='text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]'>Mountain</Link>
     <Link to='#' className='text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]'>City</Link>

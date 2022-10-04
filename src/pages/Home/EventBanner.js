@@ -6,7 +6,7 @@ import "../../css/EventBanner.css"
 const EventBanner = () => {
 
   return (
-    <div className="mb-[60px] lg:mb-[104px]">
+    <div className="mb-[30px] lg:mb-[44px]">
         <div className="container">
 
       <div className="grid grid-cols-12">

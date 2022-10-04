@@ -1,5 +1,5 @@
 /* accordion */
-.accordion-container .accordion {
+/* .accordion-container .accordion {
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 45%;
@@ -68,5 +68,47 @@
     0% {
       transform: scaleY(0);
     }
-  }
-  
+  } */
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../../src//assets/images/single-destination/carretup.png");
+  transform: rotate(-180deg);
+   
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+  /* background: rgba(208, 3, 56, 0.9); */
+}
+
+.accordion-button::after {
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("../assets/images/single-destination/carretdown.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 0 #e5e7eb;
+}
+button.accordion-button.relative.flex.items-center.w-full.py-4.px-5.text-base.text-gray-800.text-left.bg-white.border-0.rounded-none.transition.focus\:outline-none.collapsed {
+
+  color: rgba(208, 3, 56, 0.9);
+}
+
+
+
+input:focus{
+  box-shadow: none !important;
+}
+textarea:focus{
+  box-shadow: none !important;
+}
