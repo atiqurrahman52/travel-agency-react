@@ -7,12 +7,12 @@ const Location = ({ items }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState(items);
   
-  function handlePageClick({ selected: selectedPage }) {
+  const  handlePageClick = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
   }
   
   // 0, 10, 20, 30....
-  const PER_PAGE = 6;
+  const PER_PAGE = 4;
   const offset = currentPage * PER_PAGE;
   // console.log("offset", offset);
 
@@ -27,7 +27,7 @@ const Location = ({ items }) => {
             <div key={id} className="">
               <div
                 className="relative group overflow-hidden rounded-[20px] itemBox"
-                data-item="asia"
+                
               >
                 <img
                   className="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-125 transition-all duration-[2000ms]"

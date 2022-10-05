@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const data = [
   {
@@ -33,11 +34,12 @@ const data = [
 
 const Test = () => {
   const [tabActive, setTabActive] = useState(0);
-//   const [tabData, setTabData] = useState(data[tabActive]);
+  const [accordionActive, setAccordionActive] = useState(0);
+  //   const [tabData, setTabData] = useState(data[tabActive]);
 
-//   useEffect(() => {
-//     setTabData(data[tabActive]);
-//   }, [tabActive, tabData]);
+  //   useEffect(() => {
+  //     setTabData(data[tabActive]);
+  //   }, [tabActive, tabData]);
 
   return (
     <div className="py-40 container">
@@ -54,7 +56,6 @@ const Test = () => {
           </p>
         ))}
       </div>
-
 
       {/* solution 1  */}
       {/* <div className="mt-10 border p-4 bg-gray-100">
@@ -79,6 +80,33 @@ const Test = () => {
           </>
         );
       })}
+
+      {/* accordion  */}
+
+      <div className="mt-20 space-y-2">
+        {data.map(({ id, title,img,description }) => (
+          <div key={id} onClick={() => setAccordionActive(id === accordionActive ? "" : id)}>
+            <div
+              className={`flex items-center justify-between ${
+                id === accordionActive ? "bg-blue-500 rounded-b-none " : "bg-blue-300"
+              } py-1.5 px-4 rounded text-white cursor-pointer`}
+            >
+              <p>{title}</p>
+              <RiArrowDownSLine
+                className={`${id === accordionActive && "rotate-180"}`}
+              />
+            </div>
+            {id === accordionActive && (
+              <div key={id} className="border p-4 bg-gray-100">
+                <div className="flex gap-4">
+                  <img src={img} alt="" className="h-40 w-96" />
+                  <p className="w-full bg-white p-4">{description}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -41,7 +41,7 @@ const Destination = ({ items }) => {
               Find your Destination from Our Travel Bucket
             </h3>
             <div className="flex md:justify-center justify-start items-center gap-[40px]  text-[#E46D8C]  overflow-x-auto md:overflow-x-visible">
-              {["europe", "asia", "africa", "america"].map((item, i) => {
+              {["europe", "asia", "africa", "north america"].map((item, i) => {
                 return (
                   <button
                     key={i}
@@ -65,7 +65,7 @@ const Destination = ({ items }) => {
                   <div key={id} className="">
                     <div
                       className="relative group overflow-hidden rounded-[20px] itemBox"
-                      data-item="asia"
+                     
                     >
                       <img
                         className="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-125 transition-all duration-[2000ms]"
