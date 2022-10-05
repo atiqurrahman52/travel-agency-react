@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import "../../css/pagination.css";
 
 const Location = ({ items }) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -20,13 +21,13 @@ const Location = ({ items }) => {
 
   return (
     <div className="container">
-      <div className="mt-10 lg:-mt-20 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-2 gap-5 ">
+      <div className="mt-10 lg:-mt-20 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-20">
         {data
           .slice(offset, offset + PER_PAGE)
           .map(({ id, country, details, days, price, img }) => (
             <div key={id} className="">
               <div
-                className="relative group overflow-hidden rounded-[20px] itemBox"
+                className="relative group overflow-hidden rounded-[20px]"
                 
               >
                 <img

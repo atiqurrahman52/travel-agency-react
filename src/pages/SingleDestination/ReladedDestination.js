@@ -2,7 +2,7 @@ import React from 'react';
 import minali from '../../assets/images/single-destination/Manali 1.png'
 const ReladedDestination = () => {
     return (
-        <div className="mb-[80px] mt-9">
+        <div className="mb-[50px] mt-9">
         <h3
           className="text-[#393E50] font-nunito font-extrabold text-[24px] md:leading-[30px] leading-[48px] md:text-left text-center mb-8"
         >

@@ -9,11 +9,11 @@ const Featured = () => {
         <div className='mb-[60px] lg:mb-[104px]'>
         <div className='container'>
         <h1
-          className="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800]"
+          className="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800] mt-0 md:mt-9"
         >
           Featured Trips for You
         </h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
             {
                 
                 featuredItems.map(item =>  (

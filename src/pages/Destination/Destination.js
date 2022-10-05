@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import EventBanner from "../Home/EventBanner";
 import AllDestination from "./AllDestination";
 import Header from "./Header";
@@ -17,7 +18,7 @@ const Destination = () => {
 
   return (
     <>
-      {data.length>0 ? (
+      {data.length > 0 ? (
         <div>
           <Header />
           <Location items={data} />
@@ -26,7 +27,7 @@ const Destination = () => {
         </div>
       ) : (
         <div className="absolute left-0 top-0 h-screen w-screen bg-white flex justify-center items-center">
-            Loading...
+          Loading...
         </div>
       )}
     </>

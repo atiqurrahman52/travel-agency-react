@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CaretLeft, CaretRight } from "phosphor-react";
 import ReactPaginate from "react-paginate";
+import "../../css/pagination.css";
+import "../../css/Destination.css";
 
 const Destination = ({ items }) => {
   // const [items, setItems] = useState(data);
@@ -16,7 +18,7 @@ const Destination = ({ items }) => {
         ? data.filter((item) => item.category === "europe")
         : filteredData
     );
-  }, [data, filteredData, isActive]);
+  }, [data, isActive]);
 
   const filterItem = (item, i) => {
     setIsActive(i);
@@ -40,7 +42,8 @@ const Destination = ({ items }) => {
             <h3 className="text-[#393E50]  font-nunito font-extrabold lg:text-[32px] text-[16px] lg:leading-[40px] leading-[22px] text-center mb-[32px]">
               Find your Destination from Our Travel Bucket
             </h3>
-            <div className="flex md:justify-center justify-start items-center gap-[40px]  text-[#E46D8C]  overflow-x-auto md:overflow-x-visible">
+            {/* <div className="flex md:justify-center justify-start items-center gap-10  text-[#E46D8C] scroll-bar  overflow-x-auto md:overflow-x-visible"> */}
+            <div className="flex justify-center items-center gap-10  text-[#E46D8C] scroll-bar overflow-x-auto md:overflow-x-visible scrollbar-thumb-blue-600 scrollbar-thumb-rounded hover:scrollbar-thumb-red-500 ">
               {["europe", "asia", "africa", "north america"].map((item, i) => {
                 return (
                   <button
@@ -58,7 +61,7 @@ const Destination = ({ items }) => {
               })}
             </div>
 
-            <div className="mt-10 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-2 gap-5 ">
+            <div className="mt-12 md:mt-20 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-2 gap-4 md:gap-6 border border-red-600 mb-10 md:mb-20">
               {filteredData
                 .slice(offset, offset + PER_PAGE)
                 .map(({ id, country, details, days, price, img }) => (

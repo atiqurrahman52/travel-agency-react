@@ -12,7 +12,7 @@
 
 /* all destination started  */
 
-.country .itemBox.hide {
+/* .country .itemBox.hide {
     display: none;
   }
   
@@ -21,7 +21,7 @@
     color: #fff;
     padding: 10px;
     border: 1px solid rgba(208, 3, 56, 0);
-    /* border: red; */
+    border: red;
     cursor: pointer;
     white-space: nowrap;
     margin-bottom: 10px;
@@ -30,6 +30,26 @@
   section ul li.active {
     background: #f1b4c4;
     border: 1px solid rgba(208, 3, 56, 0.4);
-  }
+  } */
   
   /* all destination ended */
+/* 
+  .scroll-bar{
+    width: 250px;
+    height: 400px;
+    margin: 50px 20px;
+    border: 1px solid blue;
+    overflow: auto;
+  }  */
+  .scroll-bar::-webkit-scrollbar{
+    height: 3px;
+    
+  }
+  .scroll-bar::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #CECECE;
+  }
+  .scroll-bar::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #E46D8C;
+  }
