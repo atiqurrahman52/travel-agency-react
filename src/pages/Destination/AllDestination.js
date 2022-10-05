@@ -42,8 +42,8 @@ const Destination = ({ items }) => {
             <h3 className="text-[#393E50]  font-nunito font-extrabold lg:text-[32px] text-[16px] lg:leading-[40px] leading-[22px] text-center mb-[32px]">
               Find your Destination from Our Travel Bucket
             </h3>
-            {/* <div className="flex md:justify-center justify-start items-center gap-10  text-[#E46D8C] scroll-bar  overflow-x-auto md:overflow-x-visible"> */}
-            <div className="flex justify-center items-center gap-10  text-[#E46D8C] scroll-bar overflow-x-auto md:overflow-x-visible scrollbar-thumb-blue-600 scrollbar-thumb-rounded hover:scrollbar-thumb-red-500 ">
+            {/* <div className="flex md:justify-center justify-start items-center gap-10  text-[#E46D8C] scroll-bar  overflow-x-auto md:overflow-x-visible scrollbar-thumb-blue-600 hover:scrollbar-thumb-red-500 "> */}
+            <div className="flex justify-start md:justify-center items-center gap-10  text-[#E46D8C] scroll-bar overflow-x-auto">
               {["europe", "asia", "africa", "north america"].map((item, i) => {
                 return (
                   <button
