@@ -1,18 +1,22 @@
-import React from "react";
+import { hover } from "@testing-library/user-event/dist/hover";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { galleries } from "../../data/gallery/galleryData";
 
+
+
 const Galleries = () => {
+ 
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     speed: 2000,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1000,
     arrows: false,
-    cssEase: "linear",
     autoplay: true,
-    centerPadding: "820px",
+    // pauseOnHover: true
+    // centerPadding: "20px",
   };
 
   return (
@@ -31,7 +35,7 @@ const Galleries = () => {
               {items.details}
             </p>
 
-            <Slider {...settings}>
+            <Slider {...settings} className="slider-item">
               {items.img.map((item) => (
                 <div key={item.id} className="px-1">
                   <img className="w-full h-full" src={item} alt="" />

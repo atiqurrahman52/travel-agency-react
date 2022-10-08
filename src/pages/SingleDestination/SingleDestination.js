@@ -17,7 +17,7 @@ const SingleDestination = () => {
       <DestinationHeader />
       <div className="grid grid-cols-12 gap-6 container">
         <div className="col-span-12 lg:col-span-8">
-     <IncredibleTurkey />
+          <IncredibleTurkey />
           <Accordion />
 
           <DestinationGallery />
