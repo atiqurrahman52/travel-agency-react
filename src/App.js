@@ -7,6 +7,8 @@ import About from "./pages/About/About";
 import SingleDestination from "./pages/SingleDestination/SingleDestination";
 import Layout from "./common/Layout";
 
+
+
 function App() {
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="destination" element={<Destination />} />
           <Route path="about" element={<About />} />
+          {/* <Route path="img" element={<ImageViewer />} /> */}
           <Route path="/single-destination" element={<SingleDestination />} />
         </Route>
       </Routes>

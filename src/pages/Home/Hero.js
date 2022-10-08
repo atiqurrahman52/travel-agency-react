@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='curb mb-10 p-1 lg:p-14'>
           <div className='container'>
            
-            <div className='grid grid-cols-12'>
+            <div className='grid grid-cols-12 mt-5 md:mt-20 '>
 
 
                 <div className='col-span-12 lg:col-span-6 mb-8'>
