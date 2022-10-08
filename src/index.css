@@ -1,24 +1,23 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-input:focus{
+input:focus {
   box-shadow: none !important;
 }
-textarea:focus{
+textarea:focus {
   box-shadow: none !important;
 }
-
 
 /* font family */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Square+Peg&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Square+Peg&family=Teko:wght@300;400;500;600;700&display=swap");
 /* font family */
 @font-face {
-  font-family: 'Quentin';
+  font-family: "Quentin";
   font-style: normal;
   font-weight: 400;
-  src: local('Quentin'), url('https://fonts.cdnfonts.com/s/26481/Quentin.woff') format('woff');
+  src: local("Quentin"),
+    url("https://fonts.cdnfonts.com/s/26481/Quentin.woff") format("woff");
 }
 
 .curb {
@@ -32,19 +31,22 @@ textarea:focus{
   }
 }
 
-
-/* .active{
+.active {
   position: relative;
-} */
-
-/* nav div li.active::after{ */
-  /* .active::after{
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-
-    transform: translateX(-50%);
-    border-bottom: 2px solid #D00338E5;
-    width: 20px;
-} */
+}
+.PositionUnset {
+  position: unset;
+}
+.PositionUnset::after {
+  position: unset !important;
+}
+nav div li a.active::after {
+  content: "";
+  position: absolute;
+  /* bottom: 2px; */
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #d00338e5;
+  width: 20px;
+}

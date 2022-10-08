@@ -40,7 +40,7 @@ const Accordion = () => {
 
   return (
     <div className="mt-10 space-y-6">
-      <h3 class="md:text-left text-center text-[#393E50] md:text-[40px] text-[24px] font-nunito font-extrabold mb-6 md:mb-9 leading-[48px]">
+      <h3 className="md:text-left text-center text-[#393E50] md:text-[40px] text-[24px] font-nunito font-extrabold mb-6 md:mb-9 leading-[48px]">
         Tour Itinerary
       </h3>
       {accordions.map(({ id, title, description }) => (

@@ -25,6 +25,9 @@ export default function NavBar() {
     window.addEventListener("scroll", changeNavbarColor);
   }, [colorChange, destinationPath]);
 
+
+  
+
   return (
     <nav
       className={`w-full shadow-lg md:shadow-none
@@ -69,7 +72,7 @@ export default function NavBar() {
                       height="2.8817"
                       rx="1.44085"
                       fill="#D00338"
-                      fill-opacity="0.9"
+                      fillOpacity="0.9"
                     />
                     <rect
                       x="2.82812"
@@ -78,7 +81,7 @@ export default function NavBar() {
                       height="2.8817"
                       rx="1.44085"
                       fill="#D00338"
-                      fill-opacity="0.9"
+                      fillOpacity="0.9"
                     />
                     <rect
                       x="2.82812"
@@ -87,7 +90,7 @@ export default function NavBar() {
                       height="2.8817"
                       rx="1.44085"
                       fill="#D00338"
-                      fill-opacity="0.9"
+                      fillOpacity="0.9"
                     />
                   </svg>
                 )}
@@ -103,21 +106,21 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-6 md:flex md:space-x-10 md:space-y-0">
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className={`${location.pathname !== '/' && 'PositionUnset'}`}>Home</NavLink>
               </li>
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
-                <NavLink to="/gallery">Gallery</NavLink>
+                <NavLink to="gallery">Gallery</NavLink>
               </li>
               <li className="hidden lg:block">
-                <NavLink to="/">
+                <Link to="/">
                   <img src={logo} alt="" />
-                </NavLink>
+                </Link>
               </li>
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
-                <NavLink to="/destination">Destination</NavLink>
+                <NavLink to="destination">Destination</NavLink>
               </li>
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="about">About</NavLink>
               </li>
             </ul>
           </div>
