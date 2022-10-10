@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Featured from "../Home/Featured";
 import Accordion from "./Accordion";
 
@@ -12,6 +12,13 @@ import ReladedDestination from "./ReladedDestination";
 import Tags from "./Tags";
 
 const SingleDestination = () => {
+  useEffect(() =>{
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+      });
+},[])
   return (
     <div className="pt-0">
       <DestinationHeader />

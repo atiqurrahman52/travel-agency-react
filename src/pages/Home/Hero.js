@@ -6,7 +6,7 @@ import price from '../../assets/images/countdown/price.svg';
 import user from '../../assets/images/countdown/member.svg'
 const Hero = () => {
     return (
-      <div className='curb mb-10 p-1 lg:p-14'>
+      <div className='curb mb-10 p-1 lg:p-16'>
           <div className='container'>
            
             <div className='grid grid-cols-12 mt-5 md:mt-20 '>
@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
 
                 <div className='col-span-12 lg:col-span-6 mb-8'>
-                    <img src={hero} />
+                    <img src={hero}  alt='' />
                 </div>
 
               
@@ -28,7 +28,7 @@ const Hero = () => {
               <div
                 className="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
-                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={country} />
+                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={country} alt=''  />
                 <div className="text-center md:text-left space-y-2">
                  
                   <CountUp className='text-accent font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]' end={100} />
@@ -49,7 +49,7 @@ const Hero = () => {
               <div
                 className="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
-                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={country} />
+                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={country} alt=''  />
                 <div className="text-center md:text-left space-y-2">
                  
                   <CountUp className='text-accent font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]' end={35000} />
@@ -70,7 +70,7 @@ const Hero = () => {
               <div
                 className="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
-                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={price} />
+                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={price} alt=''  />
                 <div className="text-center md:text-left space-y-2">
                  
                   
@@ -91,7 +91,7 @@ const Hero = () => {
               <div
                 className="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
-                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={user} />
+                <img className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]' src={user} alt=''  />
                 <div className="text-center md:text-left space-y-2">
                  
                   <CountUp className='text-accent font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]' end={54} />

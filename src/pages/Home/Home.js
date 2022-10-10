@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Africa from './Africa';
 import Asia from './Asia';
 import Combo from './Combo';
@@ -11,6 +11,14 @@ import Inspiration from './Inspiration';
 import Partners from './Partners';
 
 const Home = () => {
+    useEffect(() =>{
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+          });
+    },[])
+
     return (
         <div>
             <Hero />
