@@ -1,8 +1,9 @@
-
-/** @type {import('tailwindcss').Config} */ 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", "./node_modules/tw-elements/dist/js/**/*.js",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+    // "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     screens: {
@@ -26,24 +27,20 @@ module.exports = {
     extend: {
       fontFamily: {
         quentin: ["Quentin", "sans-serif"],
-        nunito:["Nunito", "sans-serif"],
-        squarepeg:["Square Peg", "cursive"],
-       
+        nunito: ["Nunito", "sans-serif"],
+        squarepeg: ["Square Peg", "cursive"],
       },
-     
 
-     
       colors: {
-        'primary': '#393E50',
-        'secondary': '#5C5C5C',
-        'accent': '#D41B4B',
-        'tertiary':'#747474',
-        
+        primary: "#393E50",
+        secondary: "#5C5C5C",
+        accent: "#D41B4B",
+        tertiary: "#747474",
       },
-   
     },
   },
   plugins: [
-    require('tw-elements/dist/plugin'),
+    require("tw-elements/dist/plugin"),
+    // require('flowbite/plugin')
   ],
-}
+};

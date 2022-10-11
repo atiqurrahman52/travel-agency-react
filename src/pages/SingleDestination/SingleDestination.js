@@ -6,6 +6,7 @@ import Accordion from "./Accordion";
 import DestinationGallery from "./DestinationGallery";
 import DestinationHeader from "./DestinationHeader";
 import Form from "./Form";
+import GalleryDestination from "./GalleryDestination";
 import IncredibleTurkey from "./IncredibleTurkey";
 // import IncredibleTurkey from "./IncredibleTurkey";
 import ReladedDestination from "./ReladedDestination";
@@ -27,7 +28,8 @@ const SingleDestination = () => {
           <IncredibleTurkey />
           <Accordion />
 
-          <DestinationGallery />
+          {/* <DestinationGallery /> */}
+          <GalleryDestination />
         </div>
 
         <div className="col-span-12 lg:col-span-4">

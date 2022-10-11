@@ -77,7 +77,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
                 <Link to="/">Home</Link>
                 <Link to="/destination">Destinations</Link>
-                <Link to="/gallery">GALLERY</Link>
+                <Link to="/gallery">Gallery</Link>
                 <Link to="/about">About</Link>
                 <Link to="#"> Terms & Conditions </Link>
                 <Link to="#"> License </Link>

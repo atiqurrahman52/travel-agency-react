@@ -1,4 +1,4 @@
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -10,20 +10,15 @@
   }
   
   body {
-    /* background-color: #b5fac7; */
+    
   }
   
   .pages {
-    /* color: #316685;
-    text-align: center;
-    font-size: calc(1.5rem + 2vw);
-    margin-top: 10%; */
-    
-   
+  
   }
   
   .navbar {
-    /* background-color: #1f5156; */
+   
     height: 80px;
     display: flex;
     justify-content: center;
@@ -49,7 +44,7 @@
     bottom:0;
     left:0;
     right:0;
-    /* background-color:rgba(0,0,0,0.3); */
+    
   }
   
   .nav-logo {
@@ -96,7 +91,7 @@
   
   .nav-item:hover:after {
     width: 100%;
-    /* background: #ffdd40; */
+
     border-bottom: 2px solid #D00338E5;
   }
   
@@ -115,7 +110,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      border-top: 1pxsolid #fff;
+      border-top: 1px solid #fff;
       position: absolute;
       top: 80px;
       left: -110%;
@@ -124,18 +119,18 @@
     }
   
     .nav-menu.active {
-      /* background: #1f5156; */
+ 
       background: rgb(249, 247, 242);
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
-      /* border: 2px solid red; */
+    
     }
     .nav-item .active {
-      /* color: #ffdd40; */
+     
       color: #393E50;
-      /* border: 2px solid green; */
+     
     }
     .nav-links {
       padding: 1rem;
@@ -151,7 +146,7 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      /* color: #ffdd40; */
+   
       color: red;
     }
-  }
+  } */
