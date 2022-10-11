@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/single-destination.css";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 const Form = () => {
+  const [startDate, setStartDate] = useState(null);
+
   return (
     <div className="">
       <form
@@ -33,7 +38,7 @@ const Form = () => {
           />
         </div>
 
-        <div className="relative">
+        {/* <div className="relative">
           <div>
             <input
               datepicker=""
@@ -42,9 +47,25 @@ const Form = () => {
               placeholder="Choose Date of Travel"
             />
           </div>
-        </div>
-
-
+        </div> */}
+        {/* <div className="relative">
+          <div>
+            <input
+              datepicker=""
+              type="text"
+              className="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
+              placeholder="Choose Date of Travel"
+            />
+          </div>
+        </div> */}
+        <DatePicker
+          className="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
+          placeholderText="Choose Date of Travel"
+          disabledKeyboardNavigation
+          selected={startDate}
+          minDate={new Date()}
+          onChange={(date) => setStartDate(date)}
+        />
 
         <div>
           <input

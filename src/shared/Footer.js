@@ -29,7 +29,7 @@ const Footer = () => {
                 alt=""
                 srcSet=""
               />
-              <p className="text-tertiary text-[16px] font-nunito font-normal leading-[20px] lg:pr-6 lg:text-left text-center">
+              <p className="text-tertiary text-[16px] font-nunito font-semibold leading-[20px] lg:pr-6 lg:text-left text-center">
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate the visual form of a document
                 or a typeface without relying on meaningful content.
