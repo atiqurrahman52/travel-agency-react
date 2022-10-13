@@ -51,7 +51,7 @@ const Asia = () => {
   return (
     <div className="mb-[60px] lg:mb-[104px]">
       <div className="container ">
-        <h2 className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] md:leading-[90px] leading-[48px] md:mb-[40px] mb-[30px]">
+        <h2 className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] md:leading-[90px] leading-[48px] md:mb-[64px] mb-[40px]">
           {" "}
           Asia{" "}
         </h2>
@@ -67,7 +67,7 @@ const Asia = () => {
                 <p>{asia.city}</p>
               </div>
               <div className="lg:text-[#000000]  text-[16px] font-nunito font-semibold leading-[20px] mt-[24px]">
-                <p>{asia.details}</p>
+                <p className="mb-[9px]">{asia.details}</p>
                 <p>{asia.price}</p>
               </div>
             </div>
