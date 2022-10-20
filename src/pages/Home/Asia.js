@@ -1,10 +1,8 @@
 import React from "react";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+
 import { MapPin } from "phosphor-react";
 import Slider from "react-slick";
 import { asiaSlider } from "../../data/home/asiaData";
-
 
 const Asia = () => {
   const settings = {

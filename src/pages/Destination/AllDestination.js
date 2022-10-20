@@ -5,7 +5,7 @@ import ReactPaginate from "react-paginate";
 import "../../css/pagination.css";
 import "../../css/Destination.css";
 
-const Destination = ({ items }) => {
+const AllDestination = ({ items }) => {
   // const [items, setItems] = useState(data);
   const [data, setData] = useState(items);
   const [isActive, setIsActive] = useState(0);
@@ -129,4 +129,4 @@ const Destination = ({ items }) => {
   );
 };
 
-export default Destination;
+export default AllDestination;

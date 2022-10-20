@@ -1,3 +1,4 @@
+import { CaretDown } from "phosphor-react";
 import React, { useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 // import { accordions } from './AccordionData';
@@ -55,12 +56,12 @@ const Accordion = () => {
         >
           <div className="flex items-center justify-between lg:text-xl py-2.5 px-5 cursor-pointer">
             <p>{title}</p>
-            <RiArrowDownSLine
-              className={`${
+            <CaretDown size={25}
+            className={`${
                 id === accordionActive &&
                 "rotate-180 transition-all duration-500"
               }`}
-            />
+             />
           </div>
           {id === accordionActive && (
             <p

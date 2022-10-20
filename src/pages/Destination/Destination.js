@@ -14,7 +14,7 @@ const Destination = () => {
       .then((data) => {
         setData(data);
       });
-  }, [data]);
+  }, []);
 
   return (
     <>
@@ -27,7 +27,7 @@ const Destination = () => {
         </div>
       ) : (
         <div className="absolute left-0 top-0 h-screen w-screen bg-white flex justify-center items-center">
-          {/* Loading... */}
+          Loading...
         </div>
       )}
     </>

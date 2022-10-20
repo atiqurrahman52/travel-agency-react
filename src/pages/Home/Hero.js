@@ -1,9 +1,9 @@
 import React from 'react';
 import hero from '../../assets/images/header/Hero Section.png';
 import CountUp from 'react-countup';
-import country from '../../assets/images/countdown/country.svg';
-import price from '../../assets/images/countdown/price.svg';
-import user from '../../assets/images/countdown/member.svg'
+// import country from '../../assets/images/countdown/country.svg';
+// import price from '../../assets/images/countdown/price.svg';
+// import user from '../../assets/images/countdown/member.svg'
 const Hero = () => {
     return (
       <div className='curb mb-10 p-1 lg:p-16'>

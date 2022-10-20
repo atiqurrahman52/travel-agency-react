@@ -8,7 +8,7 @@ textarea:focus {
 }
 
 /* preloader */
-#preloader {
+/* #preloader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,13 +24,12 @@ textarea:focus {
   line-height: 68px;
   margin-bottom: 41px;
   color: #D41B4B;
-}
+} */
 .loading span {
   display: inline-block;
   margin: 0 -0.05em;
   letter-spacing: 17px;
 }
-
 
 #preloader::after {
   background: #fff;
@@ -74,7 +73,6 @@ textarea:focus {
   }
 }
 /* preloader */
-
 
 .fade {
   opacity: 1 !important;

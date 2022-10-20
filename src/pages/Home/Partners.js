@@ -48,7 +48,7 @@ const Partners = () => {
             <div key={partner.id}>
               <div>
                 <img
-                  className="grayscale-[100%] hover:grayscale-[0%] lg:w-[100px] w-[70px] lg:h-[50px] h-[20px] object-contain mx-auto my-2"
+                  className="grayscale-[100%] hover:grayscale-[0%] w-[70px] lg:w-[100px]  h-[20px] lg:h-[56px]  object-contain mx-auto my-2"
                   src={partner.logo}
                   alt=""
                 />

@@ -15,11 +15,12 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Layout />}>
           <Route exact index element={<Home />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="destination" element={<Destination />} />
-          <Route path="about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/about" element={<About />} />
           {/* <Route path="img" element={<ImageViewer />} /> */}
-          <Route path="/single-destination" element={<SingleDestination />} />
+          <Route path="/destination/:id" element={<SingleDestination />} />
+          {/* <Route path="/destination/:destinationId" element={<SingleDestination />} /> */}
         </Route>
       </Routes>
     </>
