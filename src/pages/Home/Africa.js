@@ -51,7 +51,8 @@ const Africa = () => {
   return (
     <div className="mb-[60px] lg:mb-[104px]">
         <div className="container ">
-        <h2 className="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] md:leading-[90px] leading-[48px] md:mb-[40px] mb-[30px]"> Africa</h2>
+        <h2 className="text-center font-quentin font-normal text-[32px] md:text-[80px]
+          md:leading-[90px] leading-[48px] mb-10 md:mb-16 text-transparent bg-clip-text bg-gradient-to-b from-[#F43B47] to-[#453A94]"> Africa</h2>
 
     
         <Slider {...settings}  >

@@ -6,6 +6,7 @@ import Destination from "./pages/Destination/Destination";
 import About from "./pages/About/About";
 import SingleDestination from "./pages/SingleDestination/SingleDestination";
 import Layout from "./common/Layout";
+import NotFound from "./shared/NotFound";
 
 
 
@@ -20,7 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* <Route path="img" element={<ImageViewer />} /> */}
           <Route path="/destination/:id" element={<SingleDestination />} />
-          {/* <Route path="/destination/:destinationId" element={<SingleDestination />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
