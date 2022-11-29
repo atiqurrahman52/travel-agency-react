@@ -19,7 +19,6 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="img" element={<ImageViewer />} /> */}
           <Route path="/destination/:id" element={<SingleDestination />} />
           <Route path="*" element={<NotFound />} />
         </Route>

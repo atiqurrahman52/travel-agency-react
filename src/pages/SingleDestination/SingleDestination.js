@@ -30,8 +30,8 @@ const SingleDestination = () => {
           <Accordion />
 
           {/* <DestinationGallery /> */}
-          {/* <GalleryDestination /> */}
-          <G />
+          <GalleryDestination />
+          {/* <G /> */}
         </div>
 
         <div className="col-span-12 lg:col-span-4">
