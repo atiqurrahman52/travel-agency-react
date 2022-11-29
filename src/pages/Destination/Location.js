@@ -46,8 +46,7 @@ console.log('location',id);
                 />
 
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#00000000]/0 to-[#00000000]/100 p-4 lg:p-11">
-                 {/* <Link to="/single-destination">  */}
-                 {/* <Link to="/single-destination">  */}
+               
                  <Link to={`/destination/${id}`} > 
                  <div className="flex items-start justify-between flex-col h-full">
                    
