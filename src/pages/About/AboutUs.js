@@ -40,7 +40,7 @@ const AboutUs = () => {
                     <h3
                       className="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
                     >
-                      Tour Guide hhh
+                      Tour Guide 
                     </h3>
                     <p
                       className="text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"

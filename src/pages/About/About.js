@@ -17,7 +17,7 @@ const About = () => {
           });
     },[])
     return (
-        <div className='pt-36'>
+        <div className='pt-24 md:pt-36'>
  
             <AboutUs />
             <Service />

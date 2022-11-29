@@ -9,6 +9,9 @@ export default function NavBar() {
   const [colorChange, setColorChange] = useState(false);
 
   const destinationPath = location.pathname === "/destination";
+  const singleDestinationPath = location.pathname === "/destination/:id";
+
+  console.log(singleDestinationPath);
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -25,13 +28,14 @@ export default function NavBar() {
     window.addEventListener("scroll", changeNavbarColor);
   }, [colorChange, destinationPath]);
 
-
-  
-
   return (
     <nav
-      className={`w-full shadow-lg md:shadow-none
-      ${colorChange ? "bg-white !shadow-lg" : "bg-white md:bg-transparent"} 
+      className={`w-full shadow-lg md:shadow-none bg-white
+      ${
+        colorChange
+          ? "bg-white !shadow-lg"
+          : !singleDestinationPath && "bg-white md:bg-transparent"
+      } 
       ${!colorChange && destinationPath ? "md:text-white" : "text-secondary "} 
       md:pb-5 md:pt-6 fixed top-0 z-50 transition-all duration-500 `}
     >
@@ -106,7 +110,12 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-6 md:flex md:space-x-10 md:space-y-0">
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
-                <NavLink to="/" className={`${location.pathname !== '/' && 'PositionUnset'}`}>Home</NavLink>
+                <NavLink
+                  to="/"
+                  className={`${location.pathname !== "/" && "PositionUnset"}`}
+                >
+                  Home
+                </NavLink>
               </li>
               <li className="uppercase font-nunito font-semibold text-sm md:text-base">
                 <NavLink to="gallery">Gallery</NavLink>

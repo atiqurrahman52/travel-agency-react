@@ -22,7 +22,7 @@ const SingleDestination = () => {
       });
 },[])
   return (
-    <div className="pt-0">
+    <div className=" pt-10 md:pt-0">
       <DestinationHeader />
       <div className="grid grid-cols-12 gap-6 container">
         <div className="col-span-12 lg:col-span-8">

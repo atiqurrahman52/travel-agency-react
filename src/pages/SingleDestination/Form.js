@@ -10,7 +10,7 @@ const Form = () => {
     <div className="">
       <form
         action=""
-        className="p-[33px] rounded-[20px] bg-[#FFFFFF] shadow-[0px_0px_40px_rgba(0,0,0,0.05)]"
+        className="p-4 md:p-[33px] rounded-[20px] bg-[#FFFFFF] shadow-[0px_0px_40px_rgba(0,0,0,0.05)]"
       >
         <div>
           <input
@@ -38,26 +38,7 @@ const Form = () => {
           />
         </div>
 
-        {/* <div className="relative">
-          <div>
-            <input
-              datepicker=""
-              type="text"
-              className="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
-              placeholder="Choose Date of Travel"
-            />
-          </div>
-        </div> */}
-        {/* <div className="relative">
-          <div>
-            <input
-              datepicker=""
-              type="text"
-              className="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
-              placeholder="Choose Date of Travel"
-            />
-          </div>
-        </div> */}
+       
         <DatePicker
           className="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
           placeholderText="Choose Date of Travel"

@@ -32,10 +32,6 @@ const DestinationGallery = () => {
     },
   ];
 
-
-
- 
-
   return (
     <div>
       <div className="mt-5 lg:mt-9">
@@ -55,8 +51,10 @@ const DestinationGallery = () => {
                 i === 4
               }`}
             >
-              
-              <ImageViewer img={image.img} className="group rounded-[10px] overflow-hidden cursor-pointer w-full h-full"/>
+              <ImageViewer
+                img={image.img}
+                className="group rounded-[10px] overflow-hidden cursor-pointer w-full h-full"
+              />
               {/* <img
                 src={image.img}
                 className="group rounded-[10px] overflow-hidden cursor-pointer w-full h-full"
@@ -81,7 +79,7 @@ const DestinationGallery = () => {
           </div> */}
         </div>
 
-        <ImageViewer/>
+        <ImageViewer />
       </div>
     </div>
   );

@@ -17,9 +17,8 @@ const GalleryDestination = () => {
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    centerMode: true,
   };
-
+  console.log(galleriesData);
   return (
     <div className="py-6 md:py-10 gallery-image">
       <h3 className="md:text-left text-center text-[#393E50] md:text-[40px] text-2xl font-nunito font-extrabold leading-[48px] pb-4 md:pb-10">
@@ -42,6 +41,7 @@ const GalleryDestination = () => {
           >
             <img
               src={data.src}
+              // src={require(`./../../assets/images/single-destination/${data.src}.png`)}
               alt=""
               className="rounded-[10px] w-ful h-full"
             />
@@ -70,6 +70,7 @@ const GalleryDestination = () => {
           {galleriesData.map((data, i) => (
             <div key={i} className="relative h-[192px] w-full">
               <img
+                // src={require(`./../../assets/images/single-destination/${data.src}.png`)}
                 src={data.src}
                 alt=""
                 className="rounded-[10px] w-full h-full"

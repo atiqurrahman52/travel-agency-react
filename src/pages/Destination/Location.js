@@ -7,10 +7,10 @@ import "../../css/pagination.css";
 const Location = ({ items }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState(items);
-  
-  const  handlePageClick = ({ selected: selectedPage }) => {
+
+  const handlePageClick = ({ selected: selectedPage }) => {
     setCurrentPage(selectedPage);
-  }
+  };
 
   // 0, 10, 20, 30....
   const PER_PAGE = 4;
@@ -19,14 +19,14 @@ const Location = ({ items }) => {
 
   const pageCount = Math.ceil(data.length / PER_PAGE);
 
-  console.log('location items ',items);
+  console.log("location items ", items);
   const id = data;
-console.log('location',id);
+  console.log("location", id);
   // const {id} = useParams();
   const navigate = useNavigate();
-  const navigateToDestination = id =>{
-    navigate(`/destination/${id}`)
-  }
+  const navigateToDestination = (id) => {
+    navigate(`/destination/${id}`);
+  };
 
   return (
     <div className="container">
@@ -35,10 +35,7 @@ console.log('location',id);
           .slice(offset, offset + PER_PAGE)
           .map(({ id, country, details, days, price, img }) => (
             <div key={id} className="">
-              <div
-                className="relative group overflow-hidden rounded-[20px]"
-                
-              >
+              <div className="relative group overflow-hidden rounded-lg md:rounded-[20px]">
                 <img
                   className="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-125 transition-all duration-[2000ms]"
                   src={require(`./../../assets/images/destination/${img}`)}
@@ -46,38 +43,33 @@ console.log('location',id);
                 />
 
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#00000000]/0 to-[#00000000]/100 p-4 lg:p-11">
-               
-                 <Link to={`/destination/${id}`} > 
-                 <div className="flex items-start justify-between flex-col h-full">
-                   
-                     <div className="flex items-center justify-center gap-2">
-                     <span className="w-[10px] h-[10px] rounded-full bg-[#F30D60] inline-block"></span>
-                      <p className="font-nunito font-extrabold lg:text-[16px] text-[14px] leading-[20px] text-[#FFFFFF]">
-                        {country}
-                      </p>
-                     </div>
-                
-                    <div>
-                      <div className="mb-3">
-                     
+                  <Link to={`/destination/${id}`}>
+                    <div className="flex items-start justify-between flex-col h-full">
+                      <div className="flex items-center justify-center gap-2">
+                        <span className="w-[10px] h-[10px] rounded-full bg-[#F30D60] inline-block"></span>
+                        <p className="font-nunito font-extrabold lg:text-[16px] text-[14px] leading-[20px] text-[#FFFFFF]">
+                          {country}
+                        </p>
+                      </div>
+
+                      <div>
+                        <div className="mb-3">
                           <p className="text-[#FFFFFF] lg:text-[24px] text-[16px] font-nunito font-extrabold lg:leading-[30px] leading-[22px]">
                             {details}
                           </p>
-                    
-                      </div>
-                      <div className="flex items-center justify-start gap-2">
-                        <p className="font-nunito font-extrabold text-[#FFFFFF]/60 text-[16px] leading-[20px]">
-                          {days}
-                        </p>
-                        <p className="font-nunito font-extrabold text-[#FFFFFF] text-[16px] leading-[20px]">
-                          {price}
-                        </p>
+                        </div>
+                        <div className="flex items-center justify-start gap-2">
+                          <p className="font-nunito font-extrabold text-[#FFFFFF]/60 text-[16px] leading-[20px]">
+                            {days}
+                          </p>
+                          <p className="font-nunito font-extrabold text-[#FFFFFF] text-[16px] leading-[20px]">
+                            {price}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                 </Link>
-                 {/* </Link> */}
+                  </Link>
+                  {/* </Link> */}
                 </div>
               </div>
             </div>

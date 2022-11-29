@@ -1,12 +1,16 @@
-
 .single-destination {
   background-image: url("../assets/images/single-destination/single-page-bg.png");
 }
 
-
-input:focus{
+input:focus {
   box-shadow: none !important;
 }
-textarea:focus{
+textarea:focus {
   box-shadow: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .single-destination {
+    background-image: url("../assets/images/single-destination/mob-bg.png");
+  }
 }
