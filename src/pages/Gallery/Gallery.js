@@ -10,6 +10,7 @@ const Gallery = () => {
       left: 0,
       behavior: "instant",
     });
+    document.title = "Tourelish | Gallery ";
   }, []);
   return (
     <>

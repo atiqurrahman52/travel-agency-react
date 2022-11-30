@@ -5,7 +5,7 @@
     "details": "Incredible Turkey, Istanbul",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "dubai.png",
+    "img": "dubai.webp",
     "category": "asia"
   },
   {
@@ -14,7 +14,7 @@
     "details": "Incredible Edinburgh, Edinburgh",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "edinburgh.png",
+    "img": "edinburgh.webp",
     "category": "europe"
   },
   {
@@ -23,7 +23,7 @@
     "details": "Incredible Fuji, Fuji",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "fuji.png",
+    "img": "fuji.webp",
     "category": "asia"
   },
   {
@@ -32,7 +32,7 @@
     "details": "Incredible Halti, Halti",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "halti.png",
+    "img": "halti.webp",
     "category": "north america"
   },
   {
@@ -41,7 +41,7 @@
     "details": "Incredible Turkey, Istanbul",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "istanbul.png",
+    "img": "istanbul.webp",
     "category": "asia"
   },
   {
@@ -50,7 +50,7 @@
     "details": "Incredible Kilimanjaro, Kilimanjaro",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "kilimanjaro.png",
+    "img": "kilimanjaro.webp",
     "category": "africa"
   },
   {
@@ -59,7 +59,7 @@
     "details": "Incredible Krimona, Krimona",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "krimona.png",
+    "img": "krimona.webp",
     "category": "europe"
   },
   {
@@ -68,7 +68,7 @@
     "details": "Incredible Ladhak, Ladhak",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "ladhak.png",
+    "img": "ladhak.webp",
     "category": "asia"
   },
   {
@@ -77,7 +77,7 @@
     "details": "Incredible Nordic, Nordic",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "nordic.png",
+    "img": "nordic.webp",
     "category": "europe"
   },
   {
@@ -86,7 +86,7 @@
     "details": "Incredible Paris, Paris",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "paris.png",
+    "img": "paris.webp",
     "category": "europe"
   },
   {
@@ -95,7 +95,7 @@
     "details": "Incredible Sydney, Sydney",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "sydney.png",
+    "img": "sydney.webp",
     "category": "asia"
   },
   {
@@ -104,7 +104,7 @@
     "details": "Incredible Zurich, Zurich",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "zurich.png",
+    "img": "zurich.webp",
     "category": "europe"
   },
   {
@@ -113,7 +113,7 @@
     "details": "Incredible Ladhak, Ladhak",
     "days": "5days | ",
     "price": "$59,000",
-    "img": "ladhak.png",
+    "img": "ladhak.webp",
     "category": "asia"
   }
 ]

@@ -1,8 +1,8 @@
 import React from 'react';
-import about from '../../assets/images/about/about.png'
-import tourguid from '../../assets/images/about/tourguid.png';
-import friendly from '../../assets/images/about/friendlyprice.png';
-import reliable from '../../assets/images/about/reliabletour.png';
+import about from '../../assets/images/about/about.webp'
+import tourguid from '../../assets/images/about/tourguid.webp';
+import friendly from '../../assets/images/about/friendlyprice.webp';
+import reliable from '../../assets/images/about/reliabletour.webp';
 const AboutUs = () => {
     return (
         <div>

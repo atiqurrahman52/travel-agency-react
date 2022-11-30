@@ -1,4 +1,4 @@
-import europe from "../../assets/images/about/Vector.png";
+import europe from "../../assets/images/about/europe.svg";
 import africa from "../../assets/images/about/africa.svg";
 import asia from "../../assets/images/about/asia.svg";
 import usa from "../../assets/images/about/usa.svg";
@@ -30,4 +30,4 @@ const packages = [
   },
 ];
 
-export {packages}
+export { packages };

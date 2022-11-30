@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "../../assets/images/event/desert2.png";
 import logo from "../../assets/images/event/Logo.png";
 import "../../css/EventBanner.css"
 

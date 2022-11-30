@@ -41,7 +41,6 @@ const GalleryDestination = () => {
           >
             <img
               src={data.src}
-              // src={require(`./../../assets/images/single-destination/${data.src}.png`)}
               alt=""
               className="rounded-[10px] w-ful h-full"
             />
@@ -70,7 +69,6 @@ const GalleryDestination = () => {
           {galleriesData.map((data, i) => (
             <div key={i} className="relative h-[192px] w-full">
               <img
-                // src={require(`./../../assets/images/single-destination/${data.src}.png`)}
                 src={data.src}
                 alt=""
                 className="rounded-[10px] w-full h-full"

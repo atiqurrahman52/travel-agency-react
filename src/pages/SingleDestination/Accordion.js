@@ -1,10 +1,6 @@
 import { CaretDown } from "phosphor-react";
 import React, { useState } from "react";
-import { RiArrowDownSLine } from "react-icons/ri";
-import { tourItineraryData } from "../../data/tourItinerary/tourItineraryData";
-
-
-
+import { tourItineraryData } from "../../data/singleDestination/tourItineraryData";
 
 const Accordion = () => {
   const [accordionActive, setAccordionActive] = useState(0);
@@ -14,7 +10,7 @@ const Accordion = () => {
       <h3 className="md:text-left text-center text-[#393E50] md:text-[40px] text-[24px] font-nunito font-extrabold mb-6 md:mb-9 leading-[48px]">
         Tour Itinerary
       </h3>
-      {/* {accordions.map(({ id, title, description }) => ( */}
+
       {tourItineraryData.map(({ id, title, description }) => (
         <div
           key={id}
@@ -27,12 +23,13 @@ const Accordion = () => {
         >
           <div className="flex items-center justify-between lg:text-xl py-2.5 px-5 cursor-pointer">
             <p>{title}</p>
-            <CaretDown size={25}
-            className={`${
+            <CaretDown
+              size={25}
+              className={`${
                 id === accordionActive &&
                 "rotate-180 transition-all duration-500"
               }`}
-             />
+            />
           </div>
           {id === accordionActive && (
             <p

@@ -1,26 +1,22 @@
 import React, { useEffect } from "react";
 import Featured from "../Home/Featured";
 import Accordion from "./Accordion";
-
-// import AccordionTurkey from "./AccordionTurkey";
-import DestinationGallery from "./DestinationGallery";
 import DestinationHeader from "./DestinationHeader";
 import Form from "./Form";
-import G from "./G";
 import GalleryDestination from "./GalleryDestination";
 import IncredibleTurkey from "./IncredibleTurkey";
-// import IncredibleTurkey from "./IncredibleTurkey";
 import ReladedDestination from "./ReladedDestination";
 import Tags from "./Tags";
 
 const SingleDestination = () => {
-  useEffect(() =>{
+  useEffect(() => {
     window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'instant'
-      });
-},[])
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+    document.title = "Tourelish | Destination ";
+  }, []);
   return (
     <div className=" pt-10 md:pt-0">
       <DestinationHeader />
@@ -29,9 +25,7 @@ const SingleDestination = () => {
           <IncredibleTurkey />
           <Accordion />
 
-          {/* <DestinationGallery /> */}
           <GalleryDestination />
-          {/* <G /> */}
         </div>
 
         <div className="col-span-12 lg:col-span-4">

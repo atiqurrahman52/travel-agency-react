@@ -1,5 +1,5 @@
 .single-destination {
-  background-image: url("../assets/images/single-destination/single-page-bg.png");
+  background-image: url("../assets/images/single-destination/single-page-bg.webp");
 }
 
 input:focus {
@@ -11,6 +11,6 @@ textarea:focus {
 
 @media screen and (max-width: 500px) {
   .single-destination {
-    background-image: url("../assets/images/single-destination/mob-bg.png");
+    background-image: url("../assets/images/single-destination/mob-bg.webp");
   }
 }

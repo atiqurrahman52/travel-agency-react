@@ -1,5 +1,5 @@
 import React from "react";
-import gift from "../../assets/images/gift card/Gift Card.png";
+import gift from "../../assets/images/gift card/gift-card.webp";
 
 const Gift = () => {
   return (
