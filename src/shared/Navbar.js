@@ -11,7 +11,7 @@ export default function NavBar() {
   const destinationPath = location.pathname === "/destination";
   const singleDestinationPath = location.pathname === "/destination/:id";
 
-  console.log(singleDestinationPath);
+ 
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {

@@ -65,7 +65,7 @@ const GalleryDestination = () => {
       </div>
 
       <div className="md:hidden">
-        <Slider {...settings} className="gallerySLider">
+        <Slider {...settings}>
           {galleriesData.map((data, i) => (
             <div key={i} className="relative h-[192px] w-full">
               <img

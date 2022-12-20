@@ -6,7 +6,7 @@ import "../../css/pagination.css";
 import "../../css/Destination.css";
 
 const AllDestination = ({ items }) => {
-  // const [items, setItems] = useState(data);
+ 
   const [data, setData] = useState(items);
   const [isActive, setIsActive] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
@@ -42,7 +42,7 @@ const AllDestination = ({ items }) => {
         <h3 className="text-[#393E50]  font-nunito font-extrabold lg:text-[32px] text-[16px] lg:leading-[40px] leading-[22px] text-center mb-[32px]">
           Find your Destination from Our Travel Bucket
         </h3>
-        {/* <div className="flex md:justify-center justify-start items-center gap-10  text-[#E46D8C] scroll-bar  overflow-x-auto md:overflow-x-visible scrollbar-thumb-blue-600 hover:scrollbar-thumb-red-500 "> */}
+      
         <div className="flex justify-start md:justify-center items-center gap-10  text-[#E46D8C] scroll-bar overflow-x-auto">
           {["europe", "asia", "africa", "north america"].map((item, i) => {
             return (
@@ -65,47 +65,7 @@ const AllDestination = ({ items }) => {
           {filteredData
             .slice(offset, offset + PER_PAGE)
             .map(({ id, country, details, days, price, img }) => (
-              // <div key={id} className="">
-              //   <div className="relative group overflow-hidden rounded-[20px] itemBox">
-              //     <img
-              //       className="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-125 transition-all duration-[2000ms]"
-              //       src={require(`./../../assets/images/destination/${img}`)}
-              //       alt=""
-              //     />
-
-              //     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#00000000]/0 to-[#00000000]/100 p-4 lg:p-11">
-              //       <div className="flex items-start justify-between flex-col h-full">
-              //         <Link
-              //               to="/single-destination"
-              //               className="flex items-center justify-center gap-2"
-              //             >
-
-              //           <span className="w-[10px] h-[10px] rounded-full bg-[#F30D60] inline-block"></span>
-              //           <p className="font-nunito font-extrabold lg:text-[16px] text-[14px] leading-[20px] text-[#FFFFFF]">
-              //             {country}
-              //           </p>
-              //         </Link>
-              //         <div>
-              //           <div className="mb-3">
-              //             <Link to="/single-destination">
-              //               <p className="text-[#FFFFFF] lg:text-[24px] text-[16px] font-nunito font-extrabold lg:leading-[30px] leading-[22px]">
-              //                 {details}
-              //               </p>
-              //             </Link>
-              //           </div>
-              //           <div className="flex items-center justify-start gap-2">
-              //             <p className="font-nunito font-extrabold text-[#FFFFFF]/60 text-[16px] leading-[20px]">
-              //               {days}
-              //             </p>
-              //             <p className="font-nunito font-extrabold text-[#FFFFFF] text-[16px] leading-[20px]">
-              //               {price}
-              //             </p>
-              //           </div>
-              //         </div>
-              //       </div>
-              //     </div>
-              //   </div>
-              // </div>
+             
 
               <div key={id} className="">
                 <div className="relative group overflow-hidden rounded-lg md:rounded-[20px]">
@@ -142,7 +102,7 @@ const AllDestination = ({ items }) => {
                         </div>
                       </div>
                     </Link>
-                    {/* </Link> */}
+                    
                   </div>
                 </div>
               </div>

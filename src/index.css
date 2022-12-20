@@ -49,9 +49,6 @@ nav div li a.active::after {
   border-bottom: 2px solid #d00338e5;
   width: 20px;
 }
-/* 
-.gallerySLider .slick-slide {
-  margin: 0 1px;
-} */
+
 
 

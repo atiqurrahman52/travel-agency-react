@@ -16,8 +16,7 @@ const Galleries = () => {
     autoplaySpeed: 1000,
     arrows: false,
     autoplay: true,
-    // pauseOnHover: true
-    // centerPadding: "20px",
+    
   };
 
   return (

@@ -19,10 +19,10 @@ const Location = ({ items }) => {
 
   const pageCount = Math.ceil(data.length / PER_PAGE);
 
-  console.log("location items ", items);
+  
   const id = data;
-  console.log("location", id);
-  // const {id} = useParams();
+  
+ 
   const navigate = useNavigate();
   const navigateToDestination = (id) => {
     navigate(`/destination/${id}`);
