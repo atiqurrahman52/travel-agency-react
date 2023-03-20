@@ -69,7 +69,7 @@ const Location = ({ items }) => {
                       </div>
                     </div>
                   </Link>
-                  {/* </Link> */}
+             
                 </div>
               </div>
             </div>
